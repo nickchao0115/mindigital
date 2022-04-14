@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+$font-primary: 'Montserrat', sans-serif;
+
+$white: #fff;
+$black: #1A1A1A;
+$grey:  #FAFAFA;
+
+$brand: #004FF3;
+$brand-bg: #F4F7FB;
+$outline: #CBCAFC;
+$linkOff: #7A8A94;
+$linkOff-hover: #98A6AE;
+
+$breakpoints: (
+  xs: screen and (max-width: 0),
+  sm: screen and (max-width: 576px),
+  md: screen and (max-width: 768px),
+  lg: screen and (max-width: 992px),
+  xl: screen and (max-width: 1200px),
+);
+
+$transition:                  all 0.5s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;

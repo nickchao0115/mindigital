@@ -1,0 +1,61 @@
+@import "variables";
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin sectionTtl($color) {
+  margin: 0 0 1.2rem 0;
+  font-family: $font-primary;
+  font-weight: 500;
+  font-size: 36px;
+  color: $color;
+  @include mq(lg) {
+    font-size: 32px;
+  }
+}
+
+@mixin sectionLead($color) {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 18px;
+  color: $color;
+}
+
+@mixin sectionTxt($color) {
+  font-family: $font-primary;
+  font-weight: 300;
+  font-size: 16px;
+  color: $color;
+}
+
+@mixin cardTtl($color) {
+  font-family: $font-primary;
+  font-weight: 500;
+  font-size: 20px;
+  color: $color;
+}
+
+@mixin cardSubttl($color) {
+  font-family: $font-primary;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color;
+  margin: 0.2rem 0 0 0;
+}
+
+@mixin cardTxt($color) {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 20px;
+  color: $color;
+  margin: 1.6rem 0 0 0;
+}
+
+@mixin button-primary {
+  width: 260px;
+  height: 68px;
+  background: url(../img/SectionBg.png) cover no-repeat;
+}

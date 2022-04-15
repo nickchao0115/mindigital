@@ -22,13 +22,6 @@ ul {
   list-style: none;
 }
 
-.button-primary {
-  width: 260px;
-  height: 68px;
-  background: url(../img/SectionBg.png) cover no-repeat;
-  margin: auto;
-}
-
 .sp-show {
   display: none;
 }
@@ -498,7 +491,7 @@ ul {
 /* ---------------- product end ---------------- */
 /* ---------------- demo start ---------------- */
 .demo {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
 }
 
 .demo-content .sectionTtl {
@@ -529,6 +522,38 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2rem 0 4rem;
+}
+
+.demo .button {
+  text-align: center;
+}
+
+.demo .button svg {
+  position: relative;
+  margin: 0 0 0 0.8rem;
+}
+
+.demo .button-primary {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.25rem 0;
+  width: 258px;
+  border-radius: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  background: url(../img/buttonBg.svg) center no-repeat;
 }
 
 /* ---------------- demo end ---------------- */

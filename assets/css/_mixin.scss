@@ -54,8 +54,18 @@
   margin: 1.6rem 0 0 0;
 }
 
-@mixin button-primary {
-  width: 260px;
-  height: 68px;
-  background: url(../img/SectionBg.png) cover no-repeat;
+@mixin button-primary($color) {
+  color: $color;
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0;
+  width: 258px;
+  border-radius: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  background: url(../img/buttonBg.svg) center no-repeat;
 }

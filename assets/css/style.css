@@ -414,7 +414,7 @@ ul {
 /* ---------------- intro end ---------------- */
 /* ---------------- product start ---------------- */
 .product {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
   background: #FAFAFA;
 }
 
@@ -439,13 +439,26 @@ ul {
   color: #1A1A1A;
 }
 
-.product .sectionBox {
+.product .slider-wrapper .card-slider-product {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.product .slider-wrapper .card-slider-product .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.product .slider-wrapper .card-slider-product .sectionBox {
   padding: 2rem;
   background: #fff;
   border: 1px solid #CBCAFC;
 }
 
-.product .sectionBox-TtlWrapper {
+.product .slider-wrapper .card-slider-product .sectionBox-TtlWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,19 +467,19 @@ ul {
           align-items: center;
 }
 
-.product .sectionBox-Ttl {
+.product .slider-wrapper .card-slider-product .sectionBox-Ttl {
   margin: 0 0 0 1.6rem;
   display: block;
 }
 
-.product .sectionBox-Ttl .cardTtl {
+.product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #004FF3;
 }
 
-.product .sectionBox-Ttl .cardSubttl {
+.product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardSubttl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -474,7 +487,7 @@ ul {
   margin: 0.2rem 0 0 0;
 }
 
-.product .sectionBox .sectionList {
+.product .slider-wrapper .card-slider-product .sectionBox .sectionList {
   list-style: disc;
   padding: 0 0 0 1rem;
   margin: 1.6rem 0 0 0;
@@ -484,7 +497,7 @@ ul {
   color: #1A1A1A;
 }
 
-.product .sectionBox .sectionList li {
+.product .slider-wrapper .card-slider-product .sectionBox .sectionList li {
   margin: 0.4rem 0 0 0;
 }
 
@@ -516,9 +529,9 @@ ul {
 }
 
 .demo .sectionBox {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,6 +723,48 @@ ul {
   color: #1A1A1A;
 }
 
+.WorkWith .clientsLogo .cardTtl {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #004FF3;
+}
+
+.WorkWith .clientsLogo .clientsLogoWrapper {
+  background: #fff;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1em;
+  -webkit-animation: scrollAnime 18s linear infinite;
+          animation: scrollAnime 18s linear infinite;
+}
+
+@-webkit-keyframes scrollAnime {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollAnime {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.WorkWith .clientsLogo .clientsLogoWrapper .sectionBox {
+  display: inline-block;
+}
+
 /* ---------------- WorkWith end ---------------- */
 /* ---------------- team start ---------------- */
 .team {
@@ -788,7 +843,7 @@ ul {
 /* ---------------- Testimonials start ---------------- */
 .slider-wrapper {
   position: relative;
-  padding: 4rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .slider-wrapper .slider-container {

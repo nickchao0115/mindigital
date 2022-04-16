@@ -349,7 +349,7 @@ ul {
 /* ---------------- product start ---------------- */
 
 .product {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
   background: $grey;
   &-content {
     .sectionTtl {
@@ -359,31 +359,45 @@ ul {
       @include sectionLead($black);
     }
   }
-  .sectionBox {
-    padding: 2rem;
-    background: $white;
-    border: 1px solid $outline;
-    &-TtlWrapper {
-      display: flex;
-      align-items: center
-    }
-    &-Ttl {
-      margin: 0 0 0 1.6rem;
-      .cardTtl {
-        @include cardTtl($brand);
+  
+  .slider-wrapper {
+    .card-slider-product {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
       }
-      .cardSubttl {
-        @include cardSubttl($brand);
-      }
-      display: block;
-    }
-    .sectionList {
-      list-style: disc;
-      padding: 0 0 0 1rem;
-      margin: 1.6rem 0 0 0;
-      @include sectionTxt($black);
-      li {
-        margin: 0.4rem 0 0 0;
+      .sectionBox {
+        padding: 2rem;
+        background: $white;
+        border: 1px solid $outline;
+        &-TtlWrapper {
+          display: flex;
+          align-items: center
+        }
+        &-Ttl {
+          margin: 0 0 0 1.6rem;
+          .cardTtl {
+            @include cardTtl($brand);
+          }
+          .cardSubttl {
+            @include cardSubttl($brand);
+          }
+          display: block;
+        }
+        .sectionList {
+          list-style: disc;
+          padding: 0 0 0 1rem;
+          margin: 1.6rem 0 0 0;
+          @include sectionTxt($black);
+          li {
+            margin: 0.4rem 0 0 0;
+          }
+        }
       }
     }
   }
@@ -404,7 +418,7 @@ ul {
     }
   }
   .sectionBox {
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     padding: 2rem 0 4rem;
   }
@@ -516,6 +530,26 @@ ul {
       @include sectionLead($black);
     }
   }
+  .clientsLogo {
+    .cardTtl {
+      @include cardTtl($brand);
+    }
+    .clientsLogoWrapper {
+      background: $white;
+      display: inline-block;
+      white-space: nowrap;
+      line-height: 1em;
+      animation: scrollAnime 18s linear infinite;
+      
+      @keyframes scrollAnime{
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-100%)}
+      }
+      .sectionBox {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 /* ---------------- WorkWith end ---------------- */
@@ -571,7 +605,7 @@ ul {
 
 .slider-wrapper {
 	position: relative;
-	padding: 4rem 0 0;
+	padding: 2rem 0 0;
 }
 
 .slider-wrapper .slider-container {

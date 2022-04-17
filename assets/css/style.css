@@ -449,7 +449,6 @@ ul {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
 }
 
 .product .slider-wrapper .card-slider-product .sectionBox {
@@ -536,6 +535,10 @@ ul {
   display: -ms-flexbox;
   display: flex;
   padding: 2rem 0 4rem;
+}
+
+.demo .sectionBox img {
+  height: 360px;
 }
 
 .demo .button {
@@ -698,7 +701,7 @@ ul {
 /* ---------------- record end ---------------- */
 /* ---------------- WorkWith start ---------------- */
 .WorkWith {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 5rem;
   background: #F4F7FB;
 }
 
@@ -723,46 +726,129 @@ ul {
   color: #1A1A1A;
 }
 
-.WorkWith .clientsLogo .cardTtl {
+.WorkWith .sectionBox {
+  padding: 2rem 0 1rem;
+}
+
+.WorkWith .sectionBox .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #004FF3;
+  margin: 0 0 2rem 0;
 }
 
-.WorkWith .clientsLogo .clientsLogoWrapper {
+.WorkWith .sectionBox .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
   background: #fff;
-  display: inline-block;
+  height: 12rem;
+}
+
+.WorkWith .sectionBox .slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: loop-slide 80s infinite linear 2s both;
+          animation: loop-slide 80s infinite linear 2s both;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.WorkWith .sectionBox .sideBorder {
+  border-left: 1px solid #CBCAFC;
+  min-height: 132px;
+}
+
+.WorkWith .sectionBox .content {
+  padding: 0 3rem;
+}
+
+.WorkWith .sectionBox .content img {
+  height: 6rem;
+}
+
+.WorkWith .sectionBox .content .cardTtl {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #004FF3;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.WorkWith .sectionBox .content .cardTtl::after {
+  content: "";
+  position: absolute;
+  background: #004FF3;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 3rem;
+  margin: auto;
+}
+
+.WorkWith .sectionBox .content .cardImg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.2rem 0 0 0;
+}
+
+.WorkWith .sectionBox .content .cardImg p {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  margin: 0;
+  padding: 0 1.6rem;
   white-space: nowrap;
-  line-height: 1em;
-  -webkit-animation: scrollAnime 18s linear infinite;
-          animation: scrollAnime 18s linear infinite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1A1A1A;
 }
 
-@-webkit-keyframes scrollAnime {
-  0% {
+.WorkWith .sectionBox .content .cardImg p img {
+  margin: auto;
+  height: 56px;
+  margin: 4px auto;
+}
+
+@-webkit-keyframes loop-slide {
+  from {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  100% {
+  to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
 }
 
-@keyframes scrollAnime {
-  0% {
+@keyframes loop-slide {
+  from {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  100% {
+  to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
 }
 
-.WorkWith .clientsLogo .clientsLogoWrapper .sectionBox {
-  display: inline-block;
+.WorkWith .slide-paused:hover .slideshow {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 /* ---------------- WorkWith end ---------------- */

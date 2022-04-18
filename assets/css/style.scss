@@ -625,6 +625,33 @@ ul {
       @include sectionLead($black);
     }
   }
+  .slider-wrapper {
+    .sectionBox {
+      text-align: center;
+      padding: 0 1rem;
+      img {
+        height: 286px;
+      }
+      &-Ttl {
+        background: $white;
+        padding: 1.6rem;
+        .cardTtl {
+          @include cardTtl($brand);
+        }
+        .cardSubttl {
+          @include cardSubttl($black);
+        }
+      }
+      .sectionList {
+        margin: 0.8rem 0 0 0;
+        padding: 0;
+        @include sectionTxt($black);
+        li {
+          margin: 0.4rem 0 0 0;
+        }
+      }
+    }
+  }
 }
 
 /* ---------------- team end ---------------- */
@@ -632,10 +659,16 @@ ul {
 /* ---------------- recognition start ---------------- */
 
 .recognition {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
+    }
+  }
+  .sectionBox {
+    padding: 1rem 0 0 0;
+    img {
+      width: 336px;
     }
   }
 }
@@ -654,6 +687,10 @@ ul {
     .sectionTtl {
       @include sectionTtl($white);
     }
+  }
+  .sectionBox {
+    max-width: 540px;
+    margin: auto;
   }
 }
 

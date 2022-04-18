@@ -37,7 +37,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
@@ -209,7 +209,7 @@
 .swiper-pagination {
   position: absolute;
   text-align: center;
-  bottom: 0;
+  bottom: -60px;
   -webkit-transition: 300ms opacity;
   -o-transition: 300ms opacity;
   transition: 300ms opacity;

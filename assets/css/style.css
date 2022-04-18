@@ -879,10 +879,52 @@ ul {
   color: #1A1A1A;
 }
 
+.team .slider-wrapper .sectionBox {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.team .slider-wrapper .sectionBox img {
+  height: 286px;
+}
+
+.team .slider-wrapper .sectionBox-Ttl {
+  background: #fff;
+  padding: 1.6rem;
+}
+
+.team .slider-wrapper .sectionBox-Ttl .cardTtl {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #004FF3;
+}
+
+.team .slider-wrapper .sectionBox-Ttl .cardSubttl {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1A1A1A;
+  margin: 0.2rem 0 0 0;
+}
+
+.team .slider-wrapper .sectionBox .sectionList {
+  margin: 0.8rem 0 0 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.team .slider-wrapper .sectionBox .sectionList li {
+  margin: 0.4rem 0 0 0;
+}
+
 /* ---------------- team end ---------------- */
 /* ---------------- recognition start ---------------- */
 .recognition {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
 }
 
 .recognition-content .sectionTtl {
@@ -897,6 +939,14 @@ ul {
   .recognition-content .sectionTtl {
     font-size: 32px;
   }
+}
+
+.recognition .sectionBox {
+  padding: 1rem 0 0 0;
+}
+
+.recognition .sectionBox img {
+  width: 336px;
 }
 
 /* ---------------- recognition end ---------------- */
@@ -923,6 +973,11 @@ ul {
   .contact-content .sectionTtl {
     font-size: 32px;
   }
+}
+
+.contact .sectionBox {
+  max-width: 540px;
+  margin: auto;
 }
 
 /* ---------------- contact end ---------------- */

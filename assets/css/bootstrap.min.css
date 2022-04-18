@@ -2202,18 +2202,17 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
+  padding: .8rem 1.2rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .3);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #ffffff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -2408,18 +2407,17 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: .375rem 2.25rem .375rem .75rem;
+  padding: 0.8rem 1.2rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color:rgba(255, 255, 255, .6);;
+  background-color: rgba(255, 255, 255, .3);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right .75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
+  border: 1px solid #ffffff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none
@@ -2461,6 +2459,7 @@ textarea.form-control-lg {
 }
 
 .form-check {
+  text-align: center;
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5em;
@@ -2468,8 +2467,8 @@ textarea.form-control-lg {
 }
 
 .form-check .form-check-input {
-  float: left;
-  margin-left: -1.5em
+  margin-left: -1.5em;
+  margin-right: 0.2rem
 }
 
 .form-check-input {

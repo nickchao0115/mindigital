@@ -369,6 +369,7 @@ ul {
         background-position: center;
         background-size: cover;
         width: 300px;
+        min-height: 330px;
       }
       .sectionBox {
         padding: 2rem;
@@ -397,6 +398,9 @@ ul {
             margin: 0.4rem 0 0 0;
           }
         }
+      }
+      .swiper-pagination {
+        bottom: 0;
       }
     }
   }
@@ -544,6 +548,16 @@ ul {
       overflow: hidden;
       background: $white;
       height: 12rem;
+      &-partners {
+        height: 8rem;
+        .slideshow {
+          .content {
+            img {
+              height: 4rem;
+            }
+          }
+        }
+      }
     }
     .slideshow {
       display: flex;
@@ -557,7 +571,7 @@ ul {
       min-height: 132px;
     }
     .content {
-      padding: 0 3rem;
+      padding: 0 2rem;
       img {
         height: 6rem;
       }
@@ -691,6 +705,13 @@ ul {
   .sectionBox {
     max-width: 540px;
     margin: auto;
+    color: $white;
+    form {
+      .button-submit {
+        margin: 1.6rem 0 0 0;
+        @include button-submit;
+      }
+    }
   }
 }
 

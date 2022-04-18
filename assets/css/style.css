@@ -449,6 +449,7 @@ ul {
   background-position: center;
   background-size: cover;
   width: 300px;
+  min-height: 330px;
 }
 
 .product .slider-wrapper .card-slider-product .sectionBox {
@@ -498,6 +499,10 @@ ul {
 
 .product .slider-wrapper .card-slider-product .sectionBox .sectionList li {
   margin: 0.4rem 0 0 0;
+}
+
+.product .slider-wrapper .card-slider-product .swiper-pagination {
+  bottom: 0;
 }
 
 /* ---------------- product end ---------------- */
@@ -750,6 +755,14 @@ ul {
   height: 12rem;
 }
 
+.WorkWith .sectionBox .slide-partners {
+  height: 8rem;
+}
+
+.WorkWith .sectionBox .slide-partners .slideshow .content img {
+  height: 4rem;
+}
+
 .WorkWith .sectionBox .slideshow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,7 +782,7 @@ ul {
 }
 
 .WorkWith .sectionBox .content {
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .WorkWith .sectionBox .content img {
@@ -978,6 +991,30 @@ ul {
 .contact .sectionBox {
   max-width: 540px;
   margin: auto;
+  color: #fff;
+}
+
+.contact .sectionBox form .button-submit {
+  margin: 1.6rem 0 0 0;
+  color: #004FF3;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.25rem 0;
+  width: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 0;
 }
 
 /* ---------------- contact end ---------------- */

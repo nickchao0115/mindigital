@@ -49,21 +49,21 @@
   <header id="header" class="header">
     <div class="header-content">
       <div class="container">
-        <div class="row">
-          <div class="header_ttlBox col-lg-12">
+          <div class="header_ttlBox">
             <h1 class="header_ttlBox_ttl h1-large">Banking for Next Generation</h1>
             <p class="header_ttlBox_txt">
-              Our Banking-as-a-Service platform has consistently helped our partners to upgrade<br>
+              Our Banking-as-a-Service platform has consistently helped our partners to upgrade<br class="pc-show">
               their digital infrastructure, improve profit, control risk and save operation cost.</p>
-          </div> <!-- end of col -->
-        </div> <!-- end of row -->
+          </div>
       </div> <!-- end of container -->
     </div> <!-- end of header-content -->
 
     <!-- Video Background -->
-    <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
-      <source src="./assets/img/header-background-video.mp4" type="video/mp4" />
-    </video>
+    <div class="bg-video">
+      <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
+        <source src="./assets/img/header-background-video.mp4" type="video/mp4" />
+      </video>
+    </div>
     <!-- end of video background -->
 
   </header> <!-- end of header -->
@@ -271,7 +271,7 @@
                 <li>Protect customer data privacy</li>
               </ul>
             </div>
-            <div class="sectionBox col-lg-6">
+            <div class="sectionBox noLine col-lg-6">
               <h5 class="cardTtl">Stability</h5>
               <ul class="sectionList sectionTxt">
                 <li>Years of stable operation history over many countries Response time no more than 10ms</li>
@@ -659,6 +659,11 @@
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 3,
+      breakpoints: {
+        992: {
+          slidesPerView: 1
+        },
+      },
       coverflowEffect: {
         rotate: 40,
         stretch: 0,
@@ -679,10 +684,8 @@
     var cardSlider = new Swiper('.card-slider-team', {
       slidesPerView: 3,
       spaceBetween: 12,
-      // Responsive breakpoints
       breakpoints: {
-        // when window width is >= 320px
-        960: {
+        992: {
           slidesPerView: 1,
           spaceBetween: 12
         },

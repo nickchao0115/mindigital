@@ -12,8 +12,8 @@
   font-weight: 500;
   font-size: 36px;
   color: $color;
-  @include mq(lg) {
-    font-size: 32px;
+  @include mq(md) {
+    font-size: 33px;
   }
 }
 
@@ -22,6 +22,9 @@
   font-weight: 400;
   font-size: 18px;
   color: $color;
+  @include mq(md) {
+    font-size: 16px;
+  }
 }
 
 @mixin sectionTxt($color) {
@@ -29,6 +32,9 @@
   font-weight: 400;
   font-size: 16px;
   color: $color;
+  @include mq(md) {
+    font-size: 14px;
+  }
 }
 
 @mixin cardTtl($color) {
@@ -36,6 +42,9 @@
   font-weight: 500;
   font-size: 20px;
   color: $color;
+  @include mq(md) {
+    font-size: 18px;
+  }
 }
 
 @mixin cardSubttl($color) {
@@ -44,6 +53,9 @@
   font-size: 16px;
   color: $color;
   margin: 0.2rem 0 0 0;
+  @include mq(md) {
+    font-size: 14px;
+  }
 }
 
 @mixin cardTxt($color) {
@@ -52,6 +64,9 @@
   font-size: 20px;
   color: $color;
   margin: 1.6rem 0 0 0;
+  @include mq(md) {
+    font-size: 18px;
+  }
 }
 
 @mixin button-primary($color) {
@@ -68,6 +83,9 @@
   white-space: nowrap;
   cursor: pointer;
   background: url(../img/buttonBg.svg) center no-repeat;
+  @include mq(md) {
+    font-size: 1rem;
+  }
 }
 
 @mixin button-submit {
@@ -84,4 +102,7 @@
   cursor: pointer;
   background:$white;
   border-radius: 0;
+  @include mq(md) {
+    font-size: 1.2rem;
+  }
 }

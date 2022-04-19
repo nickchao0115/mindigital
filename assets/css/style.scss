@@ -14,6 +14,7 @@ body {
   font-family: $font-primary;
   letter-spacing: 0.02rem;
   line-height: 1.4;
+  transition: $transition;
 }
 
 a {
@@ -28,7 +29,7 @@ ul {
 .sp-show {
   display: none;
 
-  @include mq(md) {
+  @include mq(lg) {
     display: block;
   }
 }
@@ -36,7 +37,7 @@ ul {
 .pc-show {
   display: block;
 
-  @include mq(md) {
+  @include mq(lg) {
     display: none;
   }
 }
@@ -204,31 +205,67 @@ ul {
   height: 100vh;
   position: relative;
   @include mq(lg) {
-    height: auto;
+    height: 64vh;
   }
   &_ttlBox{
     position: absolute;
-    bottom: 5rem;
     left: 0;
+    right: 0;
+    bottom: 5rem;
     color: $white;
     z-index: 10;
+    padding: 0 2rem;
+    @include mq(lg) {
+      bottom: 4rem;
+    }
     &_ttl {
       font-weight: 500;
       font-size: 52px;
       margin: 0 0 1.4rem 0;
-      @include mq(md) {
-        margin-bottom: 2.25rem;
-        font-size: 3rem;
+      @include mq(xl) {
+        font-size: 46px;
+      }
+      @include mq(lg) {
+        font-size: 40px;
       }
     }
     &_txt {
       font-weight: 400;
       font-size: 24px;
+      @include mq(xl) {
+        font-size: 20px;
+      }
+      @include mq(lg) {
+        font-size: 18px;
+      }
     }
   }
 }
 
-.header-content {
+.header .header-content {
+  position: relative;
+	background-size: cover;
+  background-color: rgba(0, 79, 243, 0.4);
+	text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 8;
+  @include mq(lg) {
+    height: 64vh;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
   &::before {
     content: '';
     position: absolute;
@@ -241,56 +278,27 @@ ul {
   }
 }
 
-
-.header .header-content {
-  padding-top: 11rem;
-	padding-bottom: 9rem;
-	background: rgba(0, 79, 243, 0.4);
-	background-size: cover;
-	text-align: center; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding-top: 0;
-  padding-bottom: 0;
-  @include mq(lg) {
-    height: auto;
-    padding-top: 18rem;
-		padding-bottom: 16rem;
-  }
-  @include mq(md) {
-    padding-top: 15rem;
-		padding-bottom: 13rem;
-  }
-}
-
 .header #video-background {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
+	width: 100%;
+  object-fit: cover;
+  height: 100%;
+  z-index: -100;
 	z-index: -100; 
+  z-index: -100;
+  @include mq(xl) {
+    font-size: 20px;
+  }
 }
 
 /* ---------------- intro start ---------------- */
 
 .intro {
-  padding: 4rem 0 8rem;
+  padding: 6rem 0;
   background: url(../img/SectionBg.png) center center no-repeat;
   background-size: cover;
-
   @include mq(lg) {
-    padding: 10rem 0 12rem;
+    padding: 4rem 0;
   }
-
-  @include mq(md) {
-    padding: 8rem 0;
-  }
-
   &-content {
     text-align: left;
     letter-spacing: 0.06em;
@@ -305,6 +313,9 @@ ul {
     .sectionBoxWrapper {
       margin: 2rem 0 0 0;
       display: flex;
+      @include mq(lg) {
+        display: block;
+      }
       .sectionBox {
         display: block;
         background: rgba(255, 255, 255, 0.16);
@@ -313,6 +324,10 @@ ul {
         padding: 2rem;
         margin: 0 1rem;
         width: 33.333%;
+        @include mq(lg) {
+          width: 100%;
+          margin: 2rem 0;
+        }
         &:first-child {
           margin: 0
         }
@@ -331,8 +346,14 @@ ul {
           padding: 0 0 0 1rem;
           margin: 1.6rem 0 0 0;
           @include sectionTxt($white);
+          @include mq(lg) {
+            margin: 1rem 0 0 0;
+          }
           li {
             margin: 1rem 0 0 0;
+            @include mq(lg) {
+              margin: 0.4rem 0 0 0;
+            }
           }
         }
       }
@@ -341,6 +362,9 @@ ul {
 
   &-contentSec {
     margin: 4rem 0 0 0;
+    @include mq(lg) {
+      margin: 3rem 0 0 0;
+    }
   }
 }
 
@@ -351,6 +375,9 @@ ul {
 .product {
   padding: 4rem 0 6rem;
   background: $grey;
+  @include mq(lg) {
+    padding: 4rem 0 3rem;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -365,11 +392,20 @@ ul {
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
+      @include mq(lg) {
+        padding: 0 0 50px 0;
+      }
       .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 300px;
         min-height: 330px;
+        @include mq(xl){
+          min-height: 404px;
+        }
+        @include mq(lg) {
+          min-height: 0;
+        }
       }
       .sectionBox {
         padding: 2rem;
@@ -404,6 +440,11 @@ ul {
       }
     }
   }
+  .swiper-pagination {
+    @include mq(lg) {
+      bottom: 16px !important;
+    }
+  }
 }
 
 /* ---------------- product end ---------------- */
@@ -424,8 +465,15 @@ ul {
     justify-content: space-evenly;
     display: flex;
     padding: 2rem 0 4rem;
+    @include mq(xl) {
+      justify-content: center;
+    }
     img {
       height: 360px;
+      @include mq(xl) {
+        height: auto;
+        width: 50%;
+      }
     }
   }
   .button {
@@ -453,10 +501,14 @@ ul {
     }
   }
   .sectionBoxWrapper {
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     .sectionBox {
       background: $white;
       padding: 3rem 4rem;
+      @include mq(lg) {
+        border-bottom: 1px solid $outline;
+        padding: 2rem 3rem;
+      }
       .cardTtl {
         @include cardTtl($brand);
       }
@@ -472,9 +524,17 @@ ul {
     }
     .rightLine {
       border-right: 1px solid $outline;
+      @include mq(lg) {
+        border-right: 0;
+      }
     }
     .bottomLine {
       border-bottom: 1px solid $outline;
+    }
+    .noLine {
+      @include mq(lg) {
+        border-bottom: 0;
+      }
     }
   }
 }
@@ -644,7 +704,8 @@ ul {
       text-align: center;
       padding: 0 1rem;
       img {
-        height: 286px;
+        height: 100%;
+        width: 100%;
       }
       &-Ttl {
         background: $white;

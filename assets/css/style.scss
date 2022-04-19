@@ -62,6 +62,10 @@ ul {
   @include mq(sm) {
     padding: 0 1rem;
   }
+
+  @include mq(xs) {
+    padding: 0 0.8rem;
+  }
 }
 
 .top-section {
@@ -207,6 +211,9 @@ ul {
   @include mq(lg) {
     height: 64vh;
   }
+  @include mq(sm) {
+    height: 90vh;
+  }
   &_ttlBox{
     position: absolute;
     left: 0;
@@ -218,6 +225,9 @@ ul {
     @include mq(lg) {
       bottom: 4rem;
     }
+    @include mq(sm) {
+      bottom: 2rem;
+    }
     &_ttl {
       font-weight: 500;
       font-size: 52px;
@@ -228,6 +238,9 @@ ul {
       @include mq(lg) {
         font-size: 40px;
       }
+      @include mq(sm) {
+        font-size: 36px;
+      }
     }
     &_txt {
       font-weight: 400;
@@ -237,6 +250,9 @@ ul {
       }
       @include mq(lg) {
         font-size: 18px;
+      }
+      @include mq(sm) {
+        font-size: 16px;
       }
     }
   }
@@ -256,6 +272,9 @@ ul {
   z-index: 8;
   @include mq(lg) {
     height: 64vh;
+  }
+  @include mq(sm) {
+    height: 90vh;
   }
 }
 
@@ -299,6 +318,9 @@ ul {
   @include mq(lg) {
     padding: 4rem 0;
   }
+  @include mq(sm) {
+    padding: 3rem 0 4rem;
+  }
   &-content {
     text-align: left;
     letter-spacing: 0.06em;
@@ -328,6 +350,10 @@ ul {
           width: 100%;
           margin: 2rem 0;
         }
+        @include mq(sm) {
+          margin: 1rem 0;
+          padding: 1.2rem;
+        }
         &:first-child {
           margin: 0
         }
@@ -336,6 +362,9 @@ ul {
         }
         img {
           width: 100px;
+          @include mq(sm) {
+            width: 80px;
+          }
         }
         .cardTtl {
           @include cardTtl($white);
@@ -365,6 +394,9 @@ ul {
     @include mq(lg) {
       margin: 3rem 0 0 0;
     }
+    @include mq(sm) {
+      margin: 2rem 0 0 0;
+    }
   }
 }
 
@@ -378,6 +410,9 @@ ul {
   @include mq(lg) {
     padding: 4rem 0 3rem;
   }
+  @include mq(sm) {
+    padding: 3rem 0 2rem;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -388,6 +423,7 @@ ul {
   }
   
   .slider-wrapper {
+    margin: 2rem 0 0 0;
     .card-slider-product {
       width: 100%;
       padding-top: 50px;
@@ -401,19 +437,25 @@ ul {
         width: 300px;
         min-height: 330px;
         @include mq(xl){
-          min-height: 404px;
+          min-height: 428px;
         }
         @include mq(lg) {
-          min-height: 0;
+          min-height: 252px;
         }
       }
       .sectionBox {
         padding: 2rem;
         background: $white;
         border: 1px solid $outline;
+        @include mq(sm) {
+          padding: 1.2rem;
+        }
         &-TtlWrapper {
           display: flex;
-          align-items: center
+          align-items: center;
+          img {
+            width: 60px;
+          }
         }
         &-Ttl {
           margin: 0 0 0 1.6rem;
@@ -430,6 +472,9 @@ ul {
           padding: 0 0 0 1rem;
           margin: 1.6rem 0 0 0;
           @include sectionTxt($black);
+          @include mq(lg) {
+            margin: 1rem 0 0 0;
+          }
           li {
             margin: 0.4rem 0 0 0;
           }
@@ -440,11 +485,6 @@ ul {
       }
     }
   }
-  .swiper-pagination {
-    @include mq(lg) {
-      bottom: 16px !important;
-    }
-  }
 }
 
 /* ---------------- product end ---------------- */
@@ -452,7 +492,10 @@ ul {
 /* ---------------- demo start ---------------- */
 
 .demo {
-  padding: 4rem 0 6rem;
+  padding: 4rem 0;
+  @include mq(sm) {
+    padding: 3rem 0;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -464,9 +507,13 @@ ul {
   .sectionBox {
     justify-content: space-evenly;
     display: flex;
-    padding: 2rem 0 4rem;
+    padding: 2rem 0;
     @include mq(xl) {
       justify-content: center;
+    }
+    @include mq(sm) {
+      display: block;
+      padding: 0;
     }
     img {
       height: 360px;
@@ -474,10 +521,14 @@ ul {
         height: auto;
         width: 50%;
       }
+      @include mq(sm) {
+        width: 100%;
+      }
     }
   }
   .button {
     text-align: center;
+    padding: 1rem 0;
     svg {
       position: relative;
       margin: 0 0 0 0.8rem;
@@ -495,6 +546,9 @@ ul {
 .whyUs {
   padding: 4rem 0 6rem;
   background: $grey;
+  @include mq(sm) {
+    padding: 3rem 0;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -509,6 +563,9 @@ ul {
         border-bottom: 1px solid $outline;
         padding: 2rem 3rem;
       }
+      @include mq(sm) {
+        padding: 1.4rem;
+      }
       .cardTtl {
         @include cardTtl($brand);
       }
@@ -516,9 +573,15 @@ ul {
         list-style: disc;
         padding: 0 0 0 1rem;
         margin: 1.6rem 0 0 0;
+        @include mq(md) {
+          margin: 0.8rem 0 0 0;
+        }
         @include sectionTxt($brand);
         li {
           margin: 1rem 0 0 0;
+          @include mq(md) {
+            margin: 0.4rem 0 0 0;
+          }
         }
       }
     }
@@ -544,7 +607,10 @@ ul {
 /* ---------------- record start ---------------- */
 
 .record {
-  padding: 4rem 0 8rem;
+  padding: 4rem 0 6rem;
+  @include mq(md) {
+    padding: 3rem 0 2rem;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -556,26 +622,64 @@ ul {
   .sectionBoxWrapper {
     align-items: center;
     margin: 4rem auto 0;
+    @include mq(md) {
+      display: block;
+      margin: 2rem auto 0;
+    }
     .sectionBox {
       display: block;
       text-align: center;
       padding: 2rem;
       width: 33.33%;
+      @include mq(lg) {
+        padding: 1.2rem;
+      }
+      @include mq(md) {
+        width: 100%;
+      }
       &:nth-child(2n+0) {
         border-left: 1px solid $outline;
         border-right: 1px solid $outline;
+        @include mq(md) {
+          border-left: 0;
+          border-right: 0;
+          border-top: 1px solid $outline;
+          border-bottom: 1px solid $outline;
+        }
       }
       .cardTtl {
         @include cardTtl($brand);
         margin: 1.6rem 0 0 0;
+        @include mq(md) {
+          margin: 1rem 0 0 0;
+        }
       }
       .sectionList {
-        padding: 0 0 0 1rem;
+        padding: 0;
         margin: 1.6rem 0 0 0;
+        @include mq(md) {
+          margin: 1rem 0 0 0;
+        }
         @include sectionTxt($black);
         li {
           margin: 0.4rem 0 0 0;
         }
+      }
+    }
+    .noLeftPadding {
+      @include mq(xl) {
+        padding-left: 0;
+      }
+      @include mq(md) {
+        padding: 1.2rem;
+      }
+    }
+    .noRightPadding {
+      @include mq(xl) {
+        padding-right: 0;
+      }
+      @include mq(md) {
+        padding: 1.2rem;
       }
     }
   }
@@ -588,6 +692,9 @@ ul {
 .WorkWith {
   padding: 4rem 0 5rem;
   background: $brand-bg;
+  @include mq(md) {
+    padding: 3rem 0;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -598,9 +705,15 @@ ul {
   }
   .sectionBox {
     padding: 2rem 0 1rem;
+    @include mq(md) {
+      padding: 1rem 0;
+    }
     .cardTtl {
       @include cardTtl($brand);
-      margin: 0 0 2rem 0;
+      margin: 0 auto 2rem;
+      @include mq(md) {
+        margin: 0 auto 1rem;
+      }
     }
     .slide {
       display: flex;
@@ -691,6 +804,9 @@ ul {
 .team {
   padding: 4rem 0 8rem;
   background: $grey;
+  @include mq(md) {
+    padding: 3rem 0 6rem;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -700,9 +816,12 @@ ul {
     }
   }
   .slider-wrapper {
+    padding: 1rem 0 0 0;
+    @include mq(md) {
+      padding: 0.6rem 0 0 0;
+    }
     .sectionBox {
       text-align: center;
-      padding: 0 1rem;
       img {
         height: 100%;
         width: 100%;
@@ -735,6 +854,9 @@ ul {
 
 .recognition {
   padding: 4rem 0 6rem;
+  @include mq(md) {
+    padding: 3rem 0;
+  }
   &-content {
     .sectionTtl {
       @include sectionTtl($brand);
@@ -782,7 +904,6 @@ ul {
 
 .slider-wrapper {
 	position: relative;
-	padding: 2rem 0 0;
 }
 
 .slider-wrapper .slider-container {
@@ -791,7 +912,6 @@ ul {
 
 .slider-wrapper .swiper-container {
 	position: static;
-	width: 96%;
 }
 
 .slider-wrapper .swiper-button-prev:focus,

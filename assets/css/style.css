@@ -232,12 +232,6 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
-  .header {
-    height: 90vh;
-  }
-}
-
 .header_ttlBox {
   position: absolute;
   left: 0;
@@ -331,12 +325,6 @@ ul {
 @media (max-width: 992px) {
   .header .header-content {
     height: 64vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .header .header-content {
-    height: 90vh;
   }
 }
 

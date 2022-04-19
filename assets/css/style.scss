@@ -211,9 +211,6 @@ ul {
   @include mq(lg) {
     height: 64vh;
   }
-  @include mq(sm) {
-    height: 90vh;
-  }
   &_ttlBox{
     position: absolute;
     left: 0;
@@ -272,9 +269,6 @@ ul {
   z-index: 8;
   @include mq(lg) {
     height: 64vh;
-  }
-  @include mq(sm) {
-    height: 90vh;
   }
 }
 

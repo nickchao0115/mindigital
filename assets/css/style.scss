@@ -441,6 +441,7 @@ ul {
         padding: 2rem;
         background: $white;
         border: 1px solid $outline;
+        border-radius: 8px;
         @include mq(sm) {
           padding: 1.2rem;
         }

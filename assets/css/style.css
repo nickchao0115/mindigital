@@ -649,6 +649,7 @@ ul {
   padding: 2rem;
   background: #fff;
   border: 1px solid #CBCAFC;
+  border-radius: 8px;
 }
 
 @media (max-width: 576px) {

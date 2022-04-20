@@ -502,6 +502,12 @@ ul {
   }
 }
 
+@media (max-width: 576px) {
+  .intro-content .sectionBoxWrapper .sectionBox .cardTtl {
+    font-size: 18px;
+  }
+}
+
 .intro-content .sectionBoxWrapper .sectionBox .sectionList {
   list-style: disc;
   padding: 0 0 0 1rem;
@@ -693,6 +699,12 @@ ul {
   .product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardTtl {
     font-size: 20px;
     margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardTtl {
+    font-size: 18px;
   }
 }
 
@@ -944,6 +956,12 @@ ul {
   }
 }
 
+@media (max-width: 576px) {
+  .whyUs .sectionBoxWrapper .sectionBox .cardTtl {
+    font-size: 18px;
+  }
+}
+
 .whyUs .sectionBoxWrapper .sectionBox .sectionList {
   list-style: disc;
   padding: 0 0 0 1rem;
@@ -1111,6 +1129,12 @@ ul {
   }
 }
 
+@media (max-width: 576px) {
+  .record .sectionBoxWrapper .sectionBox .cardTtl {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .record .sectionBoxWrapper .sectionBox .cardTtl {
     margin: 1rem 0 0 0;
@@ -1245,6 +1269,12 @@ ul {
   }
 }
 
+@media (max-width: 576px) {
+  .WorkWith .sectionBox .cardTtl {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   .WorkWith .sectionBox .cardTtl {
     margin: 0 auto 1rem;
@@ -1329,6 +1359,12 @@ ul {
   .WorkWith .sectionBox .content .cardTtl {
     font-size: 20px;
     margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .WorkWith .sectionBox .content .cardTtl {
+    font-size: 18px;
   }
 }
 
@@ -1486,12 +1522,25 @@ ul {
   font-weight: 500;
   font-size: 22px;
   color: #004FF3;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
   .team .slider-wrapper .sectionBox-Ttl .cardTtl {
     font-size: 20px;
     margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team .slider-wrapper .sectionBox-Ttl .cardTtl {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team .slider-wrapper .sectionBox-Ttl .cardTtl {
+    font-size: 22px;
   }
 }
 

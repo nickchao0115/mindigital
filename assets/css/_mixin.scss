@@ -54,6 +54,9 @@
     font-size: 20px;
     margin-bottom: 0.2rem;
   }
+  @include mq(sm) {
+    font-size: 18px;
+  }
 }
 
 @mixin cardSubttl($color) {

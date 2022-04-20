@@ -453,6 +453,9 @@ ul {
         }
         &-Ttl {
           margin: 0 0 0 1.6rem;
+          @include mq(sm) {
+            margin: 0 0 0 1rem;
+          }
           .cardTtl {
             @include cardTtl($brand);
           }
@@ -715,12 +718,21 @@ ul {
       overflow: hidden;
       background: $white;
       height: 12rem;
+      @include mq(sm) {
+        height: 10rem;
+      }
       &-partners {
         height: 8rem;
+        @include mq(sm) {
+          height: 6rem;
+        }
         .slideshow {
           .content {
             img {
               height: 4rem;
+              @include mq(sm) {
+                height: 3rem;
+              }
             }
           }
         }

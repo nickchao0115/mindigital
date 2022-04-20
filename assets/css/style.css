@@ -490,14 +490,15 @@ ul {
 .intro-content .sectionBoxWrapper .sectionBox .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   margin: 1.6rem 0 0 0;
 }
 
 @media (max-width: 768px) {
   .intro-content .sectionBoxWrapper .sectionBox .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -674,16 +675,23 @@ ul {
   display: block;
 }
 
+@media (max-width: 576px) {
+  .product .slider-wrapper .card-slider-product .sectionBox-Ttl {
+    margin: 0 0 0 1rem;
+  }
+}
+
 .product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
 }
 
 @media (max-width: 768px) {
   .product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -697,7 +705,7 @@ ul {
 
 @media (max-width: 768px) {
   .product .slider-wrapper .card-slider-product .sectionBox-Ttl .cardSubttl {
-    font-size: 14px;
+    margin: 0;
   }
 }
 
@@ -924,13 +932,14 @@ ul {
 .whyUs .sectionBoxWrapper .sectionBox .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
 }
 
 @media (max-width: 768px) {
   .whyUs .sectionBoxWrapper .sectionBox .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -1089,14 +1098,15 @@ ul {
 .record .sectionBoxWrapper .sectionBox .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
   margin: 1.6rem 0 0 0;
 }
 
 @media (max-width: 768px) {
   .record .sectionBoxWrapper .sectionBox .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -1222,14 +1232,15 @@ ul {
 .WorkWith .sectionBox .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
   margin: 0 auto 2rem;
 }
 
 @media (max-width: 768px) {
   .WorkWith .sectionBox .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -1251,12 +1262,30 @@ ul {
   height: 12rem;
 }
 
+@media (max-width: 576px) {
+  .WorkWith .sectionBox .slide {
+    height: 10rem;
+  }
+}
+
 .WorkWith .sectionBox .slide-partners {
   height: 8rem;
 }
 
+@media (max-width: 576px) {
+  .WorkWith .sectionBox .slide-partners {
+    height: 6rem;
+  }
+}
+
 .WorkWith .sectionBox .slide-partners .slideshow .content img {
   height: 4rem;
+}
+
+@media (max-width: 576px) {
+  .WorkWith .sectionBox .slide-partners .slideshow .content img {
+    height: 3rem;
+  }
 }
 
 .WorkWith .sectionBox .slideshow {
@@ -1288,7 +1317,7 @@ ul {
 .WorkWith .sectionBox .content .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
   position: relative;
   text-align: center;
@@ -1297,7 +1326,8 @@ ul {
 
 @media (max-width: 768px) {
   .WorkWith .sectionBox .content .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -1453,13 +1483,14 @@ ul {
 .team .slider-wrapper .sectionBox-Ttl .cardTtl {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: #004FF3;
 }
 
 @media (max-width: 768px) {
   .team .slider-wrapper .sectionBox-Ttl .cardTtl {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -1473,7 +1504,7 @@ ul {
 
 @media (max-width: 768px) {
   .team .slider-wrapper .sectionBox-Ttl .cardSubttl {
-    font-size: 14px;
+    margin: 0;
   }
 }
 

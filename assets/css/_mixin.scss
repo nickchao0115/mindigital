@@ -48,10 +48,11 @@
 @mixin cardTtl($color) {
   font-family: $font-primary;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   color: $color;
   @include mq(md) {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -62,7 +63,7 @@
   color: $color;
   margin: 0.2rem 0 0 0;
   @include mq(md) {
-    font-size: 14px;
+    margin: 0;
   }
 }
 
@@ -77,6 +78,7 @@
   }
   @include mq(sm) {
     font-size: 16px;
+    margin: 1rem 0 0 0;
   }
 }
 
